@@ -1,15 +1,37 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_catalog/models/catalog.dart';
 import 'package:flutter_catalog/pages/login_page.dart';
 import 'package:flutter_catalog/widgets/drawer.dart';
-
 import '../widgets/item_widget.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   final int days = 30;
   final String name = "Codepur";
+
+  @override
+  void initState() {
+    super.initState();
+    loadData();
+  }
+
+  void loadData() async {
+    var catalogJson = await rootBundle.loadString('assets/files/catalog.json');
+    var decodeData = jsonDecode(catalogJson);
+    
+    var productData = decodeData['products'];
+   // print(productData);
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -35,4 +57,6 @@ class HomePage extends StatelessWidget {
       drawer: const MyDrawer(),
     );
   }
+  
+  
 }
