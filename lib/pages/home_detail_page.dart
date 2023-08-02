@@ -13,9 +13,9 @@ class HomeDetailPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
       ),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -24,8 +24,8 @@ class HomeDetailPage extends StatelessWidget {
             ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(MyTheme.darkBluishColor),
+                      backgroundColor: MaterialStateProperty.all(
+                          context.theme.highlightColor),
                       shape: MaterialStateProperty.all(
                         const StadiumBorder(),
                       ),
@@ -49,18 +49,23 @@ class HomeDetailPage extends StatelessWidget {
               edge: VxEdge.top,
               child: Container(
                 width: context.screenWidth,
-                color: Colors.white,
+                color: context.cardColor,
                 child: Column(children: [
                   catalog.name.text.xl4.bold
-                      .color(MyTheme.darkBluishColor)
+                      .color(context.theme.highlightColor)
                       .make(),
-                  catalog.desc.text.lg.textStyle(context.captionStyle).make(),
+                  catalog.desc.text
+                      .color(context.theme.highlightColor)
+                      .lg
+                      .textStyle(context.captionStyle)
+                      .make(),
                   10.heightBox,
                   'Eirmod tempor amet ipsum diam sanctus eos diam nonumy sed et. Clita sit et duo amet nonumy, eos sanctus et.'
                       .text
+                      .color(context.theme.highlightColor)
                       .textStyle(context.captionStyle)
                       .make()
-                      .pOnly(left: 14, right: 14)
+                      .pOnly(left: 14, right: 14)  
                 ]).py64(),
               ),
             ),
