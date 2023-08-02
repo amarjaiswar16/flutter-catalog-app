@@ -11,6 +11,12 @@ class CatalogModel {
   //           'https://img5.gadgetsnow.com/gd/images/products/additional/large/G201756_View_1/mobiles/smartphones/apple-iphone-12-pro-256-gb-gold-6-gb-ram-.jpg'),
   
   // ];
+
+  //Get item by id
+  static Item getById(int id) => items.firstWhere((element) => element.id == id, orElse: null);
+
+  //Get item by position
+  static Item getByPosition(int pos) => items[pos];
 }
 
 class Item {
@@ -38,6 +44,8 @@ class Item {
         color: map['color'],
         image: map['image']);
   }
+
+ 
 
   Map<String, dynamic> toMap() => {
         'id': id,

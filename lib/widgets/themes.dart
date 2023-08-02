@@ -16,6 +16,7 @@ class MyTheme {
         color: Colors.white,
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.black),
+        titleTextStyle: TextStyle(color: Colors.black),
       ));
 
   static ThemeData darkTheme(BuildContext context) => ThemeData(
@@ -27,10 +28,10 @@ class MyTheme {
       highlightColor: lightBluishColor,
       colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.white),
       appBarTheme: const AppBarTheme(
-        color: Colors.black,
-        elevation: 0.0,
-        iconTheme: IconThemeData(color: Colors.white),
-      ));
+          color: Colors.black,
+          elevation: 0.0,
+          iconTheme: IconThemeData(color: Colors.white),
+          titleTextStyle: TextStyle(color: Colors.white)));
 
   static Color creamColor = const Color(0xfff5f5f5);
   static Color darkCreamColor = Vx.gray900;
