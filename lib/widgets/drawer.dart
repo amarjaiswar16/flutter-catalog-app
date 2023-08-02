@@ -6,28 +6,28 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final imageUrl =
+    const  imageUrl =
         'https://i0.wp.com/www.wonderslist.com/wp-content/uploads/2016/10/Noah-Mills-Most-Handsome-Man-2017.jpg?resize=500%2C333&ssl=1';
 
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
         child: ListView(
-          children: [
+          children: const [
             DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 margin: EdgeInsets.zero,
-                accountEmail: const Text(
+                accountEmail:  Text(
                   'amarjaiswar1606@gmail.com',
                 ),
-                accountName: const Text('Amar Jaiswar'),
+                accountName:  Text('Amar Jaiswar'),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: NetworkImage(imageUrl),
                 ),
               ),
             ),
-            const ListTile(
+             ListTile(
               leading: Icon(
                 CupertinoIcons.home,
                 color: Colors.white,
@@ -38,7 +38,7 @@ class MyDrawer extends StatelessWidget {
                 textScaleFactor: 1.2,
               ),
             ),
-            const ListTile(
+             ListTile(
               leading: Icon(
                 CupertinoIcons.profile_circled,
                 color: Colors.white,
@@ -51,7 +51,7 @@ class MyDrawer extends StatelessWidget {
                 textScaleFactor: 1.2,
               ),
             ),
-            const ListTile(
+             ListTile(
               leading: Icon(
                 CupertinoIcons.mail,
                 color: Colors.white,
