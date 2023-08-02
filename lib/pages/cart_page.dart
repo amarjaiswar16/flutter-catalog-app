@@ -35,7 +35,7 @@ class _CartTotal extends StatelessWidget {
       height: 200,
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
         VxConsumer(
-          mutations: {RemoveMutation},
+          mutations:const  {RemoveMutation},
           builder: (context, store, status) {
             return '\$${_cart.totalPrice}'
                 .text

@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: context.canvasColor,
 
       floatingActionButton: VxBuilder(
-        mutations: {AddMutation, RemoveMutation},
+        mutations: const {AddMutation, RemoveMutation},
         builder: (context, store, status) => FloatingActionButton(
           onPressed: () {
             Navigator.pushNamed(context, MyRoutes.cartPageRoute);
@@ -67,11 +67,11 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
           ),
         ).badge(
-            color: Vx.red500,
+            color: Vx.gray400,
             size: 20,
             count: _cart.items.length,
             textStyle: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold)),
+                color: Colors.black, fontWeight: FontWeight.bold)),
       ),
       body: SafeArea(
         child: Container(

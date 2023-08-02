@@ -50,18 +50,16 @@ class _LoginPageState extends State<LoginPage> {
               style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white),
+                  color: Colors.black),
             ),
             Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
+              padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
               child: Column(
                 children: [
                   TextFormField(
                     decoration: const InputDecoration(
                       hintText: 'Enter Username',
                       labelText: 'Username',
-                      
                     ),
                     validator: (value) {
                       if (value != null && value.isEmpty) {
@@ -75,6 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                   TextFormField(
+                    scrollPadding: EdgeInsets.only(bottom: 40),
                     obscureText: true,
                     decoration: const InputDecoration(
                       hintText: 'Enter Password',

@@ -6,7 +6,7 @@ import 'package:velocity_x/velocity_x.dart';
 
 class AddToCart extends StatelessWidget {
   final Item catalog;
-  AddToCart({super.key, required this.catalog});
+  const AddToCart({super.key, required this.catalog});
 
   @override
   Widget build(BuildContext context) {
