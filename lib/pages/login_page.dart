@@ -32,9 +32,10 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: context.canvasColor,
-      child: SingleChildScrollView(
+    return Scaffold(
+      //color: context.canvasColor,
+      backgroundColor: context.canvasColor,
+      body: SingleChildScrollView(
         child: Form(
           key: _formKey,
           child: Column(children: [
@@ -73,7 +74,6 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                   TextFormField(
-                    scrollPadding: EdgeInsets.only(bottom: 40),
                     obscureText: true,
                     decoration: const InputDecoration(
                       hintText: 'Enter Password',
