@@ -29,7 +29,7 @@ management, and checkout
 
 ## LIGHT THEME 
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261599383-d0561163-764d-4244-90eb-0d8f6ad3431e.jpg" width="200" height="400" /> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261599829-1a33e6dc-0ad2-48ce-86ad-c9b3c10b4135.jpg" width="200" height="400" /> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261599989-9a062cf4-02b2-48ea-b75b-b329c0ecaed9.jpg" width="200" height="400" /> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261600136-bc9683f0-4c94-489e-a395-bb4ed30abd50.jpg" width="200" height="400" /><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261600285-a2900d0d-c2d3-4898-bc43-3963a329f765.jpg" width="200" height="400" />
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261599383-d0561163-764d-4244-90eb-0d8f6ad3431e.jpg" width="200" height="300" /> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261599829-1a33e6dc-0ad2-48ce-86ad-c9b3c10b4135.jpg" width="200" height="300" /> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261599989-9a062cf4-02b2-48ea-b75b-b329c0ecaed9.jpg" width="200" height="300" /> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261600136-bc9683f0-4c94-489e-a395-bb4ed30abd50.jpg" width="200" height="300" /><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261600285-a2900d0d-c2d3-4898-bc43-3963a329f765.jpg" width="200" height="300" />
 
 
 
