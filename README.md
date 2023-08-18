@@ -25,7 +25,7 @@ management, and checkout
 ● Employed VelocityX for efficient state management
 ● Utilized packages: google_fonts, velocity_x, http
 
-# ScreenShot
+# ScreenShots
 
 ## LIGHT THEME 
 
