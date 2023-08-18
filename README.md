@@ -24,3 +24,9 @@ management, and checkout
 ● Designed responsive UI with animations and light/dark themes
 ● Employed VelocityX for efficient state management
 ● Utilized packages: google_fonts, velocity_x, http
+
+# ScreenShot
+
+## LIGHT THEME 
+
+<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/86295742/261599383-d0561163-764d-4244-90eb-0d8f6ad3431e.jpg" width="200" height="400" />
