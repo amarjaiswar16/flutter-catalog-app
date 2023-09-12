@@ -58,9 +58,12 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 children: [
                   TextFormField(
-                    decoration: const InputDecoration(
+                    decoration:  InputDecoration(
                       hintText: 'Enter Username',
                       labelText: 'Username',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(21)
+                      ),
                     ),
                     validator: (value) {
                       if (value != null && value.isEmpty) {
@@ -73,11 +76,15 @@ class _LoginPageState extends State<LoginPage> {
                       setState(() {});
                     },
                   ),
+                  const SizedBox(height: 11,),
                   TextFormField(
                     obscureText: true,
-                    decoration: const InputDecoration(
+                    decoration:  InputDecoration(
                       hintText: 'Enter Password',
                       labelText: 'Password',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(21),
+                      ),
                     ),
                     validator: (value) {
                       if (value != null && value.isEmpty) {
